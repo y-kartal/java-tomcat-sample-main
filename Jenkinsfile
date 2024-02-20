@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy to Staging Environment'){
             steps{
-                build job: 'Deploy-Application-Staging-Environment'
+                build job: 'Package-Application'
             }            
         }
         stage('Deploy to Production Environment'){
