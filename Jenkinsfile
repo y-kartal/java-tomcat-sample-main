@@ -19,8 +19,4 @@ pipeline {
                 build job: 'Deploy-Application-Production-Environment'
             }
         }
-    }
-    triggers {
-        cron('H/1 * * * *') // Her 5 dakikada bir iş akışını tetikle
-    }
-}
+
